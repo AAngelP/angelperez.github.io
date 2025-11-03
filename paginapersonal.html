@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil de Axcel Pares Angulo</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(180deg, #003366 0%, #008080 100%);
+            color: #FFFFFF;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+
+        /* Panel izquierdo */
+        .perfil {
+            flex: 1 1 250px;
+            max-width: 300px;
+            background: linear-gradient(180deg, #003366 0%, #008080 100%);
+            padding: 20px;
+            text-align: center;
+            border-right: 3px solid #F0F0F0;
+        }
+
+        .perfil img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: 3px solid #FF7F50;
+            margin-bottom: 10px;
+        }
+
+        .perfil h2 {
+            margin-top: 0;
+            font-size: 1.4em;
+        }
+
+        /* Panel derecho */
+        .info {
+            flex: 3;
+            padding: 30px;
+            background: #F0F0F0;
+            color: #003366;
+        }
+
+        .info h3 {
+            color: #008080;
+            font-size: 1.4em;
+            margin-bottom: 5px;
+        }
+
+        .info p {
+            margin: 6px 0;
+        }
+
+        .botones {
+            margin-top: 15px;
+        }
+
+        .botones a {
+            display: inline-block;
+            background-color: #FF7F50;
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            border-radius: 8px;
+            margin: 5px;
+            transition: background 0.3s;
+        }
+
+        .botones a:hover {
+            background-color: #e66a3d;
+        }
+
+        /* Sección de hobbies */
+        .hobbies {
+            padding: 40px;
+            background: linear-gradient(180deg, #FFFFFF 0%, #F0F0F0 100%);
+            color: #003366;
+            text-align: center;
+        }
+
+        .hobbies h2 {
+            color: #008080;
+            font-size: 2em;
+            margin-bottom: 30px;
+        }
+
+        .hobbie {
+            margin-bottom: 50px;
+        }
+
+        .hobbie img {
+            width: 300px;
+            height: auto;
+            border-radius: 10px;
+            border: 3px solid #008080;
+            margin-bottom: 15px;
+        }
+
+        .hobbie p {
+            max-width: 700px;
+            margin: 0 auto;
+            font-size: 1.1em;
+        }
+
+        /* Sección Criptografía */
+        .criptografia {
+            background: linear-gradient(180deg, #008080 0%, #003366 100%);
+            color: #FFFFFF;
+            padding: 40px;
+        }
+
+        .criptografia h2 {
+            text-align: center;
+            color: #FF7F50;
+            font-size: 2em;
+            margin-bottom: 25px;
+        }
+
+        .criptografia h3 {
+            color: #F0F0F0;
+        }
+
+        .criptografia p {
+            max-width: 800px;
+            margin: 0 auto 25px;
+            line-height: 1.6;
+            text-align: justify;
+        }
+
+        footer {
+            background: #003366;
+            text-align: center;
+            padding: 15px;
+            color: #FFFFFF;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Lado Izquierdo -->
+        <div class="perfil">
+            <img src="APA.jpeg" alt="Foto de perfil">
+            <h2>Alejandro Angel Perez</h2>
+            <div class="botones">
+                <a href="Currículum_Vitae.pdf" download>Descargar CV</a>
+                <a>Mi llave pública</a>
+            </div>
+        </div>
+
+        <!-- Lado Derecho -->
+        <div class="info">
+            <h3>Formación Académica</h3>
+            <p><strong>Preparatoria:</strong> CECyT 1 “Gonzalo Vázquez Vela” - IPN</p>
+            <p><strong>Universidad:</strong> ESCOM - IPN (Estudiante actual de Ingeniería en Sistemas Computacionales)</p>
+
+            <h3>Contacto</h3>
+            <p>📧 alejandroangel12222@gmail.com</p>
+
+            <h3>Mis Redes Sociales</h3>
+            <div class="botones">
+                <a href="https://www.facebook.com/alejandro.angel.1671" target="_blank">Facebook</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sección de Hobbies -->
+    <div class="hobbies">
+        <h2>Hobbies</h2>
+
+        <div class="hobbie">
+            <img src="TazadeTe4.jpg" alt="Modelado 3D en Blender">
+            <p>El modelado 3D en Blender me permite crear mundos, personajes y objetos desde cero, combinando arte y tecnología. Explorar texturas, iluminación y animaciones es una experiencia creativa que impulsa mi pensamiento espacial y atención al detalle.</p>
+        </div>
+
+        <div class="hobbie">
+            <img src="psicologia.jpg" alt="Psicología">
+            <p>La psicología me apasiona porque me ayuda a entender cómo piensan y actúan las personas. Comprender procesos mentales y emocionales amplía mi empatía y mi capacidad de análisis del comportamiento humano.</p>
+        </div>
+
+        <div class="hobbie">
+            <img src="electronica.jpg" alt="Electrónica">
+            <p>La electrónica me fascina porque me permite diseñar y construir circuitos que hacen posible la interacción entre el mundo físico y digital. Me gusta experimentar con sensores, microcontroladores y proyectos que integran hardware y software.</p>
+        </div>
+    </div>
+
+    <!-- Sección de Criptografía -->
+    <div class="criptografia">
+        <h2>Acerca de la Criptografía</h2>
+
+        <h3>Biografía de Whitfield Diffie</h3>
+        <p><strong>Whitfield Diffie</strong> (nacido en 1944) es un criptógrafo estadounidense reconocido por su trabajo en la criptografía de clave pública. Junto con Martin Hellman, desarrolló el protocolo de intercambio de claves Diffie-Hellman, que sentó las bases para la comunicación segura en internet. Su innovación permitió que dos partes pudieran establecer una clave secreta compartida sin necesidad de encontrarse previamente.</p>
+
+        <h3>Algoritmo de Cifrado RSA</h3>
+        <p>El <strong>RSA</strong> (Rivest–Shamir–Adleman) es uno de los algoritmos de cifrado más importantes en la historia de la criptografía moderna. Utiliza la factorización de números primos grandes como base de su seguridad. RSA permite tanto el cifrado de información como la verificación de firmas digitales, y se emplea ampliamente en protocolos de seguridad como SSL/TLS.</p>
+
+        <h3>Evento Importante de la criptografía</h3>
+        <p>Un evento clave en la historia de la criptografía fue la <strong>publicación del estándar AES (Advanced Encryption Standard)</strong> en el año 2001 por el NIST (National Institute of Standards and Technology). Este estándar reemplazó al DES y marcó una nueva era en la protección de datos, gracias a su resistencia ante ataques criptográficos y su eficiencia en software y hardware.</p>
+    </div>
+
+    <footer>
+        © 2025 Alejandro Angel Perez — Todos los derechos reservados.
+    </footer>
+
+</body>
+</html>
