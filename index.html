@@ -80,14 +80,14 @@
 
         /* Sección de hobbies */
         .hobbies {
-            padding: 40px;
-            background: linear-gradient(180deg, #FFFFFF 0%, #F0F0F0 100%);
-            color: #003366;
-            text-align: center;
-            display: flex;
-            flex-wrap: wrap;       /* Para que en móviles se pongan uno abajo del otro */
-            justify-content: center;
-            gap: 20px;             /* Espacio entre cada hobbie */
+    display: flex; /* Activa el modo horizontal */
+    flex-direction: row; /* Alinea los hijos en fila */
+    flex-wrap: wrap; /* Permite que bajen si no caben (responsivo) */
+    justify-content: center; /* Los centra horizontalmente */
+    gap: 30px; /* Espacio entre cada tarjeta de hobbie */
+    padding: 40px;
+    background: linear-gradient(180deg, #FFFFFF 0%, #F0F0F0 100%);
+    color: #003366;
         }
 
         .hobbies h2 {
@@ -98,21 +98,21 @@
         }
 
         .hobbie {
-            flex: 1 1 300px;       /* Crece, se encoge y tiene un base de 300px */
-            max-width: 350px;      /* Para que no se estiren demasiado en pantallas grandes */
-            margin-bottom: 30px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+    flex: 1 1 300px; /* Base de 300px, pero pueden crecer */
+    max-width: 350px; /* Evita que se estiren de más en pantallas gigantes */
+    display: flex;
+    flex-direction: column; /* Alinea imagen arriba y texto abajo */
+    align-items: center; /* Centra el contenido internamente */
+    text-align: center; 
         }
 
         .hobbie img {
-            width: 100%;           /* La imagen se ajusta al ancho del contenedor .hobbie */
-            max-width: 300px;
-            height: auto;
-            border-radius: 10px;
-            border: 3px solid #008080;
-            margin-bottom: 15px;
+    width: 100%; /* Ocupa el ancho de su contenedor (.hobbie) */
+    height: 200px; /* Altura fija para que todas las tarjetas se vean iguales */
+    object-fit: cover; /* Recorta la imagen para que no se deforme */
+    border-radius: 10px;
+    border: 3px solid #008080;
+    margin-bottom: 15px;
         }
 
         .hobbie p {
@@ -223,6 +223,7 @@
 
 </body>
 </html>
+
 
 
 
